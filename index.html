@@ -1,1 +1,126 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Everything I Left For You</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .content {
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: clamp(40px, 10vw, 90px);
+      font-weight: 400;
+      letter-spacing: -2px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: #a0a0a0;
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 50px;
+    }
+
+    button {
+      background: transparent;
+      color: white;
+      border: 1px solid #555;
+      padding: 15px 40px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    button:hover {
+      background: white;
+      color: black;
+    }
+
+    .small-text {
+      margin-top: 60px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="content">
+
+      <h1>
+        Everything<br>
+        I Left For You.
+      </h1>
+
+      <p>
+        Some things don't fit inside a box.<br>
+        So I made a place where you can keep them instead.
+      </p>
+
+      <button onclick="enterVault()">
+        ENTER
+      </button>
+
+      <div class="small-text">
+        MADE FOR YOU
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function enterVault() {
+      alert("Welcome. Everything is waiting for you.");
+    }
+
+  </script>
+
+</body>
+</html>
